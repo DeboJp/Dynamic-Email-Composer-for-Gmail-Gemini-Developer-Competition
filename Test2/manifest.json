@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail Sent Emails Fetcher",
+  "version": "1.0",
+  "description": "Fetches recent sent emails from Gmail and displays them.",
+  "permissions": ["identity", "identity.email", "scripting", "activeTab", "storage"],
+  "oauth2": {
+    "client_id": "Your Client ID.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+ "content_scripts": [
+    {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["content.js", "toolbarButton.js"]
+    }
+ ],
+"host_permissions": ["<all_urls>"],
+"icons": {
+  "16": "images/Dolly16.png",
+  "48": "images/Dolly32.png",
+  "128": "images/Dolly128.png"
+},
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/Dolly16.png",
+      "48": "images/Dolly32.png",
+      "128": "images/Dolly128.png"
+    }
+  }
+}
