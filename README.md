@@ -4,3 +4,7 @@ Load the app to chrome and grab the extension ID, then proceed to grab a google 
 ## Demo
 
 - Dolly in action! <br>
+
+![Gif1DOlly-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/79e28fcd-7a1a-4447-bcb7-630bdde7c670)
+
+![Gif2DOlly-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/671e642d-5237-4a3e-9155-a5fa21617c81)
